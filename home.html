@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pets</title>
+    <script src="index.js" type="text/javascript"></script> 
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header><h1>Localizador de Animais</h1></header>
+    <nav id="navbar">
+      <ul>
+        <li><a>Home</a></li>
+        <li><a onclick="about()">Sobre</a></li>
+        <li><a onclick="conta()">Conta</a></li>
+      </ul>
+    </nav>
+    <script type="text/javascript">
+      
+   </script>
+    <div id="mapa" ></div>
+    <script>
+
+      function inicializar() {
+        var coordenadas = {lat: -21.697576,  lng: -45.256116};
+
+        var mapa = new google.maps.Map(document.getElementById('mapa'), {
+          mapId: "fd3de8a11d2a7e0c",
+          zoom: 15,
+          center: coordenadas 
+        });
+
+        var marker = new google.maps.Marker({
+          
+          position: coordenadas,
+          map: mapa,
+          title: 'Meu marcador'
+        });
+      }
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlV6CcVVEwwr04rR_9w3dgBZgQXvVGYzw&callback=inicializar">
+    </script>
+  </body>
+
+</html>
