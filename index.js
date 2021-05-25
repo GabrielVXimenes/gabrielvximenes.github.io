@@ -1,5 +1,5 @@
 function home(){
-  window.location.href = "file:///C:/Users/bielg.DESKTOP-8OJVR6H/Documents/Projetos/Javascript/TCC/home.html";
+  window.location.href = "file:///C:/Users/bielg.DESKTOP-8OJVR6H/Documents/Projetos/Javascript/TCC/index.html";
 }
 
 function about(){
